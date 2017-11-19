@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'pan_pizzaregular';
-    src: url({{ "/fonts/panpizza-webfont.woff2" | absolute_url }}) format('woff2'),
-         url({{ "/fonts/panpizza-webfont.woff" | absolute_url }}) format('woff');
+    src: url({{ "fonts/panpizza-webfont.woff2" | absolute_url }}) format('woff2'),
+         url({{ "fonts/panpizza-webfont.woff" | absolute_url }}) format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,8 +15,8 @@
 
 @font-face {
     font-family: 'pepperoni_pizzaregular';
-    src: url({{ "/fonts/pepperoni_pizza-webfont.woff2" | absolute_url }}) format('woff2'),
-         url({{ "/fonts/pepperoni_pizza-webfont.woff" | absolute_url }}) format('woff');
+    src: url({{ "fonts/pepperoni_pizza-webfont.woff2" | absolute_url }}) format('woff2'),
+         url({{ "fonts/pepperoni_pizza-webfont.woff" | absolute_url }}) format('woff');
     font-weight: normal;
     font-style: normal;
 

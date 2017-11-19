@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: 'Peperoni';
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -101,6 +101,10 @@ header .intro-text .name {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
+    padding-bottom: 30vw;
+    word-wrap: break-word;
+    text-align: right;
+    
 }
 
 header .intro-text .skills {
@@ -148,9 +152,10 @@ header .intro-text .skills {
 }
 
 .navbar {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    text-transform: lowercase;
+    font-family: "pepperoni_pizzaregular",Montserrat,sans-serif;
+    /*font-weight: 700;*/
+    font-size: 22px;
 }
 
 .navbar a:focus {
@@ -457,3 +462,19 @@ footer .footer-below {
 
 
 /******** DOOK LINE ********/
+
+.bgimage {
+    background-attachment: fixed;
+    background-position: center;
+    filter: blur(20px) background-size: 100% 100%;
+    background-image: url(/img/banner.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    color: #fff;
+}
+
+.fullHeight
+{
+    height: 100%;
+}

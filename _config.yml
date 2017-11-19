@@ -40,3 +40,8 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+#font fix
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
