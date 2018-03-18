@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio
 modal-id: 6
 date: 2014-07-15
 img: submarine.png

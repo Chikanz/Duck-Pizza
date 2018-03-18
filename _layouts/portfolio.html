@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    
+    
+    {% include head.html %}
+    
+    <body id="page-top" class="index">
+        
+    {% include Portfolio_nav.html %}
+    
+        <div>
+        <!--Content-->
+        <section id="portfolio" class="Secondary">
+        <div class="container" style="font-family: 'Roboto Slab', serif;">
+                        
+            <h1>{{page.title}}</h1>
+            <h2>{{page.subtitle}}</h2>
+            
+            <!--Courasel!-->
+            {% if page.carousel != null %}
+            
+                {% comment %} convert variable to string by using data subfolders {% endcomment %} 
+                {% assign datastring = site.data.carousel[page.carousel] %}
+            
+                {% include carousel.html name=page.carousel data=datastring %}
+            {% endif %}
+            
+        <div class="markdown">
+        {{content}}
+        </div>    
+            
+        </div>
+        </section>
+        
+    {% include footer.html %}
+        
+    {% include js.html %}
+    </body>
+</html>

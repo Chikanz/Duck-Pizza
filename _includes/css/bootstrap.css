@@ -1092,7 +1092,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #000000;
-  background-color: #180031;
+  background-color: #{{ site.color.primary }};
 }
 input,
 button,
@@ -1136,7 +1136,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #180031;
+  background-color: #{{ site.color.primary }};
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2298,7 +2298,7 @@ th {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #180031;
+  background-color: #{{ site.color.primary }};
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -4041,7 +4041,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #180031;
+  background-color: #{{ site.color.primary }};
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4087,7 +4087,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #180031;
+    border-bottom-color: #{{ site.color.primary }};
   }
 }
 .nav-pills > li {
@@ -4155,7 +4155,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #180031;
+    border-bottom-color: #{{ site.color.primary }};
   }
 }
 .tab-content > .tab-pane {
@@ -4499,11 +4499,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #180031;
+  background-color: #{{ site.color.primary }};
   border-color: #080010;
 }
 .navbar-default .navbar-brand {
-  color: #fc8726;
+  color: #{{ site.color.secondary }};
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4511,10 +4511,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #180031;
+  color: #{{ site.color.primary }};
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fc8726;
+  color: #{{ site.color.secondary }};
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -4555,7 +4555,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #fc8726;
+    color: #{{ site.color.secondary }};
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4576,13 +4576,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default .navbar-link {
-  color: #fc8726;
+  color: #{{ site.color.secondary }};
 }
 .navbar-default .navbar-link:hover {
   color: #fc7505;
 }
 .navbar-default .btn-link {
-  color: #fc8726;
+  color: #{{ site.color.secondary }};
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
@@ -4595,7 +4595,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #cccccc;
 }
 .navbar-inverse {
-  background-color: #fc8726;
+  background-color: #{{ site.color.secondary }};
   border-color: #ec6d03;
 }
 .navbar-inverse .navbar-brand {
@@ -5009,7 +5009,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #180031;
+  background-color: #{{ site.color.primary }};
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -5910,7 +5910,7 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #180031;
+  background-color: #{{ site.color.primary }};
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -5927,7 +5927,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #180031;
+  background-color: #{{ site.color.primary }};
 }
 .modal-backdrop.fade {
   opacity: 0;

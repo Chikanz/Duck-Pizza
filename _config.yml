@@ -1,11 +1,11 @@
 # Site settings
-title: Latenite Pizza
-email: hi@spaghettitower.xyz
-url: https://latenitepizza.com
+title: Duck Pizza
+email: hi@duck.pizza
+url: https://duck.pizza
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 keywords: "your keywords, separated by commas"
 skills: "Web Developer - Graphic Artist - User Experience Designer"
-meta_author: Lucarelli Zac
+meta_author: Zac Lucarelli
 
 # Google webmaster tools
 google_verify:
@@ -25,10 +25,13 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 1d013a #18bc9c 
-  primary-rgb: "29, 1, 58"
-  secondary: fc8726 #FD6E8A
-  secondary-dark: 120326 #A2122F
+  primary: 26014d #rgb(58, 0, 119)
+  primary-rgb: "58, 0, 119"
+  primary-dark: 1d003c #1d003c
+  secondary: fc8726 #fc8726    
+  secondary-dark: fc8726 #fc8726   
+  link: ffffff #ffffff   
+  
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:

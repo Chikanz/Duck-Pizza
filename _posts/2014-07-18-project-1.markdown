@@ -1,12 +1,49 @@
 ---
-layout: default
-modal-id: 1
+layout: portfolio
 date: 2014-07-18
 img: cabin.png
-alt: image-alt
 project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-
+category: Portfolio
+carousel: pics
+subtitle: Don't panic
 ---
+
+----
+## what is Markdown?
+
+
+After starting work on Cubi in high school, I then continued work on it over the summer break until around March 2016 where It kind of lost my interest and I moved onto other things. I was originally thinking about mass producing and selling them but that seemed outside of my skill set. Programming and wiring up is one thing, where as market research and PCB design is another. Maybe one day I'll learn how to woodwork and sell these but not any time soon. Considering it would be about $70 to make I don't know who would even buy them, though I've seen people make successful businesses out of world clocks so maybe there's a chance.
+
+
+> Markdown is a lightweight markup language, originally created by John Gruber and Aaron Swartz allowing people "to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML)".
+
+see [Wikipedia](http://en.wikipedia.org/wiki/Markdown)
+
+
+----
+## usage
+1. Write markdown text in this textarea.
+2. Click 'HTML Preview' button.
+
+----
+## markdown quick reference
+# headers
+
+*emphasis*
+
+**strong**
+
+* list
+
+>block quote
+
+    code (4 spaces indent)
+[links](http://wikipedia.org)
+
+----
+## changelog
+* 17-Feb-2013 re-design
+
+----
+## thanks
+* [markdown-js](https://github.com/evilstreak/markdown-js)

@@ -31,9 +31,9 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    text-transform: lowercase;
+    font-family: "pepperoni_pizzaregular", Montserrat,"Helvetica Neue",Helvetica,sans-serif;
+    
 }
 
 hr.star-light,
@@ -181,12 +181,12 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 section.success {
     color: #fff;
-    background: #{{ site.color.primary }};
+    background: #{{ site.color.secondary }};
 }
 
 @media(max-width:767px) {
@@ -349,7 +349,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #{{ site.color.secondary-dark }};
+    background-color: #{{ site.color.primary-dark }};
 }
 
 .btn-social {
@@ -450,7 +450,7 @@ footer .footer-below {
 }
 
 .navbar-nav>.active>a {
-    background-color: #{{ site.color.secondary-dark }} !important;
+    background-color: #{{ site.color.primary-dark }} !important;
 }
 
 /* Fix modal mouse wheel issues */
@@ -477,4 +477,30 @@ footer .footer-below {
 .fullHeight
 {
     height: 100%;
+}
+
+.Secondary {
+    color: #{{ site.color.secondary }};    
+}
+
+/* No shadow on courasel*/
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none
+}
+
+.carousel img {    
+  min-width: 100%;  
+  max-width: none;
+}
+
+.carouselGrid {
+    padding: 50px;
+}
+
+.markdown a
+{
+    text-align: center;
+    color:#{{ site.color.link }};
+    text-decoration: underline;
 }
