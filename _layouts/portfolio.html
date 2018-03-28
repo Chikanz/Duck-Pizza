@@ -2,7 +2,6 @@
 <html>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     
-    
     {% include head.html %}
     
     <body id="page-top" class="index">
@@ -11,8 +10,8 @@
     
         <div>
         <!--Content-->
-        <section id="portfolio" class="Secondary">
-        <div class="container" style="font-family: 'Roboto Slab', serif;">
+        <section id="portfolio_content" class="Secondary">
+        <div class="container">
                         
             <h1>{{page.title}}</h1>
             <h2>{{page.subtitle}}</h2>
@@ -26,10 +25,11 @@
                 {% include carousel.html name=page.carousel data=datastring %}
             {% endif %}
             
-        <div class="markdown">
-        {{content}}
-        </div>    
+            <div class="markdown" style="padding-bottom: 20px;">
+                {{content}}
+            </div>
             
+            <hr class="star-primary">
         </div>
         </section>
         

@@ -216,7 +216,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba({{ site.color.primary-rgb }},.9);
+    background: rgba({{ site.color.primary-rgb }},.4);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -498,9 +498,104 @@ footer .footer-below {
     padding: 50px;
 }
 
+#portfolio_content h1
+{
+    font-size: 5em;
+}
+
+/* content styling */
 .markdown a
 {
     text-align: center;
-    color:#{{ site.color.link }};
+    color:#{{ site.color.third }};
     text-decoration: underline;
+}
+
+.markdown
+{
+    /*font-family: 'Roboto Slab', serif;    */
+    font-family: 'Lato', sans-serif;
+}
+
+.markdown .highlight
+{
+    background-color:#{{ site.color.third }};
+}
+
+.markdown blockquote
+{
+    padding:2%;    
+}
+
+.markdown h1
+{
+    font-size: 5em;
+}
+
+.markdown h2
+{
+    font-size: 3.5em;
+}
+
+.markdown p
+{
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+.markdown li
+{
+    font-size: 1.5em;
+}
+
+.markdown h1,h2,h3
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav
+{
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+/*.navbar-header*/
+.navbar-portfolio-header {
+    float: left;
+    padding-top: 7px;
+    text-align: center;
+    width: 100%;
+}
+
+/*.navbar-brand*/
+.navbar-portfolio-brand {float:none;}
+
+/*Portfolio Grid captions*/
+.HoverCaptionTop {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FFFFFF;
+    left: 15px;
+    top: 0.5em;
+    overflow: hidden;
+}
+
+.HoverCaptionBottom {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    font-size: 1.2em;
+    font-weight:700;
+    color: #FFFFFF;
+    left: 15px;
+    top: 215px;
+    overflow: hidden;
+}
+
+@media(min-width:768px) {
+#portfolio_content .container
+{
+    padding-left:100px;
+    padding-right:100px;
+}
 }

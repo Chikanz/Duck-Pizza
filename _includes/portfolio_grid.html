@@ -9,13 +9,13 @@
                 </div>
             </div>
             <div class="row">
-                {% for post in site.posts %}
+                {% for post in site.portfolio | sort: 'date'%}
                     <div class="col-sm-4 portfolio-item">
                         <a href="{{ post.url }}" class="portfolio-link">
                             <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </div>
+                                <span class="HoverCaptionTop">{{post.title}}</span>
+                                <!--<div class="code tag">#Code</div>-->
+                                <span class="HoverCaptionBottom">{{post.subtitle}}</span> 
                             </div>
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
                         </a>
