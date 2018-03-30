@@ -1,8 +1,9 @@
 ---
 layout: portfolio
-subtitle: Arduino powered alarm clock
-img: cabin.png
+subtitle: VR Castle defence game.... On steam! 
+img: reigny.jpg
 project-date: Jan 2016
+project-num: 1
 carousel: pics
 ---
 

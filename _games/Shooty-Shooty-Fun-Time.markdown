@@ -1,8 +1,9 @@
 ---
 layout: portfolio
-subtitle: Arduino powered alarm clock
-img: cabin.png
+subtitle: Wacky 1v1 FPS prototype made with Unity 
+img: shooty.jpg
 project-date: Jan 2016
+project-num: 5
 carousel: pics
 ---
 

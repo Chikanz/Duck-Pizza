@@ -1,8 +1,9 @@
 ---
 layout: portfolio
-subtitle: Arduino powered alarm clock
-img: cabin.png
+subtitle: 3D scene brought to life with unity
+img: Immersive.jpg
 project-date: Jan 2016
+project-num: 2
 carousel: pics
 ---
 

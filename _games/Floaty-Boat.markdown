@@ -1,8 +1,9 @@
 ---
 layout: portfolio
-subtitle: Arduino powered alarm clock
-img: cabin.png
-project-date: Jan 2016
+subtitle: Casual co-op game made at GGJ17
+img: floaty.jpg
+project-date: Jan 2017
+project-num: 3
 carousel: pics
 ---
 

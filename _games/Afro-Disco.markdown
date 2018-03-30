@@ -1,9 +1,11 @@
 ---
 layout: portfolio
-subtitle: Arduino powered alarm clock
-img: cabin.png
-project-date: Jan 2016
+subtitle: Tactical dance off game for mobile
+img: afro.jpg
+project-date: Dec 2017
+date: 2017-12-01
 carousel: pics
+project-num: 2
 ---
 
 Cubi is an alarm clock I made for an electronics subject in high school. It features:

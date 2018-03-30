@@ -1,9 +1,10 @@
 ---
 layout: portfolio
-subtitle: Arduino powered alarm clock
-img: cabin.png
+subtitle: Various pieces of design work done over the years
+img: Wooly.jpg
 project-date: Jan 2016
 carousel: pics
+project-num: 4
 ---
 
 Cubi is an alarm clock I made for an electronics subject in high school. It features:

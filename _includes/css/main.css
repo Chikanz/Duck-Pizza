@@ -464,14 +464,15 @@ footer .footer-below {
 /******** DOOK LINE ********/
 
 .bgimage {
-    background-attachment: fixed;
+    background-attachment: fixed; 
     background-position: center;
-    filter: blur(20px) background-size: 100% 100%;
     background-image: url(/img/banner.jpg);
     width: 100%;
     height: auto;
     background-size: cover;
     color: #fff;
+    perspective: 200px;
+    
 }
 
 .fullHeight
@@ -592,10 +593,31 @@ nav
     overflow: hidden;
 }
 
-@media(min-width:768px) {
-#portfolio_content .container
+.HoverCaptionTags {    
+    position: absolute;
+    font-size: 1em;
+    color: #FFFFFF;
+    left: 15px;
+    top: 200px;
+    overflow: hidden;
+}
+
+/*Desktop Padding for portfolio content*/
+@media(min-width:768px) 
 {
-    padding-left:100px;
-    padding-right:100px;
+    #portfolio_content .container
+    {
+        padding-left:100px;
+        padding-right:100px;
+    }
 }
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.5); }
+
+
+.round
+{
+    border-radius: 5px;
 }
+
