@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-subtitle: Various pieces of design work done over the years
+subtitle: 3D landscape textured with photos
 img: Wooly.jpg
 project-date: Jan 2016
 carousel: pics

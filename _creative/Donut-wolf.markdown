@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-subtitle: 3D scene brought to life with unity
+subtitle: 3D scene brought to life with Unity
 img: Immersive.jpg
 project-date: Jan 2016
 project-num: 2

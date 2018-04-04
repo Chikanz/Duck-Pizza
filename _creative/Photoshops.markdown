@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-subtitle: Arduino powered alarm clock
+subtitle: and other little bits of art
 img: cabin.png
 project-date: Jan 2016
 date: 2015-01-01

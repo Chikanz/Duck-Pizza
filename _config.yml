@@ -27,6 +27,7 @@ color:
   primary: 26014d #rgb(58, 0, 119)
   primary-rgb: "58, 0, 119"
   primary-dark: 1d003c #1d003c
+  primary-light: 291876 #291876
   secondary: fc8726 #fc8726    
   secondary-dark: fc8726 #fc8726   
   third: e7cfff #e7cfff
