@@ -5,6 +5,9 @@ img: IGTG.jpg
 project-date: June 2015
 project-num: 6
 carousel: pics
+
+icons:
+ - top: Csharp 
 ---
 
 Indie Game: The Game or IGTG was the first big project I ever worked on. It's a game about managing an indie game studio (so meta) where you start from your studio in a dumpster and eventually make enough money to rule the world. You have to deal with managing money and keeping employees happy by feeding them burgers. It was heavily inspired by games like FTL and (obviously) Game Dev Story.

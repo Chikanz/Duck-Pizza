@@ -5,6 +5,11 @@ img: reigny.jpg
 project-date: Jan 2016
 project-num: 1
 carousel: pics
+
+icons:
+ - top: unity 
+ - top: vive
+ - top: steam
 ---
 
 Cubi is an alarm clock I made for an electronics subject in high school. It features:

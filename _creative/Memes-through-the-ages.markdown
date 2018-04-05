@@ -5,6 +5,10 @@ img: memes.jpg
 project-date: Jan 2016
 carousel: pics
 project-num: 2
+
+icons:
+ - top: html
+ - top: ps
 ---
 
 Cubi is an alarm clock I made for an electronics subject in high school. It features:

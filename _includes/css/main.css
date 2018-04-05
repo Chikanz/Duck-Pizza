@@ -612,17 +612,17 @@ nav
     font-weight:700;
     color: #FFFFFF;
     left: 15px;
-    top: 215px;
+    top: 210px;
     overflow: hidden;
 }
 
 .HoverCaptionTags {    
     position: absolute;
-    font-size: 1em;
+    font-size: 1.8em;
     color: #FFFFFF;
     left: 15px;
-    top: 200px;
-    overflow: hidden;
+    top: 180px;
+    overflow: hidden;    
 }
 
 /*Desktop Padding for portfolio content*/

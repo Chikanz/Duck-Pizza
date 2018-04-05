@@ -21,7 +21,11 @@
                                 <a href="{{ post.url }}" class="portfolio-link">
                                     <div class="caption round">
                                         <span class="HoverCaptionTop">{{post.title}}</span>
-                                        <span class="HoverCaptionTags"><i class="fab fa-github"></i></span> 
+                                        <span class="HoverCaptionTags">
+                                            {% for icon in post.icons %}
+                                            <span class="icon-{{ icon.top }}"></span>
+                                            {% endfor %}    
+                                        </span> 
                                         <span class="HoverCaptionBottom">{{post.subtitle}}</span> 
                                     </div>
                                     <img src="img/portfolio/{{ post.img }}" class="img-responsive round" alt="{{ post.alt }}">

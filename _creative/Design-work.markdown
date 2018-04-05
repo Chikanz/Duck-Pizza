@@ -5,6 +5,11 @@ img: Covers.jpg
 project-date: March 2016
 project-num: 5
 carousel: pics
+
+
+icons:
+ - top: ps
+
 ---
 
 Cubi is an alarm clock I made for an electronics subject in high school. It features:

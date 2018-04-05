@@ -5,6 +5,11 @@ img: floaty.jpg
 project-date: Jan 2017
 project-num: 3
 carousel: pics
+
+icons:
+ - top: unity  
+ - top: itch
+ - top: github
 ---
 
 Cubi is an alarm clock I made for an electronics subject in high school. It features:

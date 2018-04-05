@@ -6,6 +6,11 @@ project-date: Dec 2017
 date: 2017-12-01
 carousel: pics
 project-num: 2
+
+icons:
+ - top: unity 
+ - top: droid
+ - top: github
 ---
 
 Cubi is an alarm clock I made for an electronics subject in high school. It features:

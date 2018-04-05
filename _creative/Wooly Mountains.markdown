@@ -5,6 +5,10 @@ img: Wooly.jpg
 project-date: Jan 2016
 carousel: pics
 project-num: 4
+
+icons:
+ - top: maya
+ - top: ps
 ---
 
 Cubi is an alarm clock I made for an electronics subject in high school. It features:

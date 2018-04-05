@@ -5,6 +5,12 @@ img: shooty.jpg
 project-date: Jan 2016
 project-num: 5
 carousel: pics
+
+icons:
+ - top: unity 
+ - top: rss
+ - top: github 
+
 ---
 
 Cubi is an alarm clock I made for an electronics subject in high school. It features:

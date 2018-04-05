@@ -1,11 +1,14 @@
 ---
 layout: portfolio
 subtitle: and other little bits of art
-img: cabin.png
+img: Photoshops.jpg
 project-date: Jan 2016
 date: 2015-01-01
 project-num: 6
 carousel: pics
+
+icons:
+ - top: ps
 ---
 
 Cubi is an alarm clock I made for an electronics subject in high school. It features:
