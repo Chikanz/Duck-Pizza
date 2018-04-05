@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.secondary }};
 }
 
 h1,
@@ -80,7 +80,7 @@ hr.star-primary:after {
 }
 
 header {
-    text-align: center;
+    text-align: left;
     color: #fff;
     background: #{{ site.color.primary }};
 }
@@ -177,6 +177,7 @@ header .intro-text .skills {
 
 section {
     padding: 100px 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 section h2 {
@@ -186,7 +187,8 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #{{ site.color.secondary }};
+    background: #{{ site.color.secondary }};    
+    z-index: 10;
 }
 
 @media(max-width:767px) {
@@ -210,6 +212,8 @@ section.success {
     margin: 0 auto;
     max-width: 400px;
     overflow: hidden;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -471,6 +475,15 @@ footer .footer-below {
 
 /******** DOOK LINE ********/
 
+::selection {
+  background: rgba(41, 24, 118, 0.6);
+}
+
+.shadow
+{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
 .bgimage {
     background-attachment: fixed; 
     background-position: center;
@@ -481,6 +494,8 @@ footer .footer-below {
     color: #fff;
     perspective: 200px;
     
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;    
 }
 
 .fullHeight
@@ -636,17 +651,18 @@ nav
     text-align:left;
     padding: 20px;
     padding-top: 0px;
-    
 }
+
 
 .blogpeek h2
 {
     font-size: 40px;
     padding: 20px;
     padding-bottom: 10px;
-    font-family: 'Roboto Slab', serif;
+    padding-top: 0px;
+    font-family: "Lato", serif;    
+    font-weight: bold;
     text-transform: none;
-    
 }
 
 .gradient
@@ -661,15 +677,22 @@ nav
 }
 
 
-.blogitem {
+.card
+{
     margin: 20px;
+    background-color: #{{ site.color.primary-light }};
+    border-radius: 5px;
 }
 
 .blogitem
 {
-    background-color: #{{ site.color.primary-light }};
-    border-radius: 5px;
-    overflow: hidden;
+    overflow: hidden;    
+}
+
+.blogitem a:hover
+{
+    text-decoration: underline;
+    color: #{{ site.color.secondary }};
 }
 
 .blogitem img
@@ -688,3 +711,54 @@ nav
     border-top: solid 3px;
     text-align: center;
 }
+
+/*About section*/
+
+
+#about p
+{
+    font-family: 'Lato', sans-serif;
+    padding-top: 30px;    
+}
+
+@media (min-width: 768px)
+{
+    #about p
+    {
+        font-size: 25px;
+        padding-top: 0px;    
+    }
+}
+
+.profilepic {    
+    border-radius: 100%;
+    width: 70%;
+    height: 80%;
+    display:block;
+    margin:auto;
+    border: 1rem solid #{{site.color.primary}}
+}
+
+@media (max-width: 768px)
+{
+.profilepic 
+    {    
+        width: 30%;
+        margin-bottom: 30px;
+    }
+}
+
+
+header h1
+{
+    font-size: 7em;    
+}
+
+header h2
+{
+    font-size: 3em;  
+    font-family: "Lato";
+    font-weight: bold;    
+}
+
+
