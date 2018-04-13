@@ -2,12 +2,12 @@
 title: Duck Pizza
 email: hi@duck.pizza
 url: https://duck.pizza
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
+description: "Zac's super cool portfolio and blog website thing"
+keywords: "duck pizza, Zac Lucarelli"
 meta_author: Zac Lucarelli
 
 # Google webmaster tools
-google_verify:
+google_verify: 5iyhmJPvXUukBZoZtl9OpHSygvt7ONVYtazp7e4p9oE
 
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
