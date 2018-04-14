@@ -13,7 +13,13 @@
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="{{ "/style.css" }}">
+    <!-- Critical css-->
+    
+    
+    <!-- Load non critical css first with rel=preload -->
+    <link rel="stylesheet" rel="preload" href="{{ "/non-crit.css" }}" async>
+    <link rel="stylesheet" href="{{ "/style.css" }}" async>
+
 
     <!-- Google verification -->
     {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
@@ -22,7 +28,7 @@
     {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
     <!-- Custom Fonts -->        
-    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" async>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,17 +37,22 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79357523-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'UA-79357523-2');
-    </script>
-    
     <!--<link rel="stylesheet" href="https://i.icomoon.io/public/temp/727c431d0a/UntitledProject/style.css">-->
+    
+    <!-- Lazy load images -->
+    <script src="/js/lazysizes.min.js" async=""></script>
+    
+    <!-- blur unloaded images -->
+    <style>
+	.blur-up {
+		-webkit-filter: blur(5px);
+		filter: blur(5px);
+		transition: filter 400ms, -webkit-filter 400ms;
+	}
+
+	.blur-up.lazyloaded {
+		-webkit-filter: blur(0);
+		filter: blur(0);
+	}
+    </style>
 </head>

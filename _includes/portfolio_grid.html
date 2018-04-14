@@ -17,7 +17,7 @@
                         <h2 class="Secondary" style="padding:20px;">{{name}}</h2>
                         {% assign posts = site.[name] | sort:'project-num' %}
                         {% for post in posts %}
-                            <div class="col-md-4 portfolio-item">
+                            <div class="col-sm-4 portfolio-item">
                                 <a href="{{ post.url }}" class="portfolio-link" rel="nofollow"> <!-- REMOVE NO FOLLOW WHEN SITE IS DONE -->
                                     <div class="caption round">
                                         <span class="HoverCaptionTop">{{post.title}}</span>
@@ -28,7 +28,11 @@
                                         </span> 
                                         <span class="HoverCaptionBottom">{{post.subtitle}}</span> 
                                     </div>
-                                    <img src="img/portfolio/{{ post.img }}" class="img-responsive round" alt="{{ post.alt }}">
+                                    <img src="img/portfolio/lquip/{{ post.img }}" class="lazyload img-responsive round blur-up" alt="{{ post.alt }}" style="width:100%"
+                                         sizes="300px"
+                                         data-srcset="img/portfolio/small/{{ post.img }} 1x,
+                                                      img/portfolio/medium/{{ post.img }} 1.5x,
+                                                      img/portfolio/large/{{ post.img }} 2x">
                                 </a>
                             </div>
                         {% endfor %}    

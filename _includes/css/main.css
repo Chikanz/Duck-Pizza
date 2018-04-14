@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
     text-transform: lowercase;
-    font-family: "pepperoni_pizzaregular", Montserrat,"Helvetica Neue",Helvetica,sans-serif;
+    font-family: "pepperoni_pizzaregular","Helvetica Neue",Helvetica,sans-serif;
     
 }
 
