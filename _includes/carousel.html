@@ -1,13 +1,13 @@
 <!--Papa bless https://unnikked.ga/making-reusable-carousels-on-jekyll-43ad914c6763 -->
 <div class="carouselGrid col-lg-12">
 <div class="col-lg-1"></div>
-<div id="{{ include.name }}" class="carousel slide col-lg-10" data-ride="carousel">
+<div id="{{ include.name }}" class="carousel slide col-lg-10" data-ride="carousel">    
  
 
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner" role="listbox" style="max-width:900px; height: 500px !important;">
     {% for picture in include.data %}
       {% if forloop.first == true %}
-        <div class="item active img-responsive">
+        <div class="item active">
           {% if picture.title %}
             <img src="{{ picture.url }}" alt="{{ picture.title }}">
           {% else %}

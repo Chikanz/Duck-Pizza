@@ -484,7 +484,7 @@ footer .footer-below {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
-.bgimage {
+.bgimage {    
     background-attachment: fixed; 
     background-position: center;
     background-image: url(/img/banner.jpg);
@@ -495,7 +495,13 @@ footer .footer-below {
     perspective: 200px;
     
     background-color: rgba(0, 0, 0, 0.2);
-    background-blend-mode: multiply;    
+    background-blend-mode: multiply;     
+}
+
+.bgtext {
+    position: relative;
+    z-index: 2;
+    filter : blur(0px);
 }
 
 .fullHeight
@@ -511,6 +517,10 @@ footer .footer-below {
 .carousel-control.left,
 .carousel-control.right {
     background-image: none
+}
+
+.carousel-inner img {
+    margin: auto;
 }
 
 .carousel img {    
@@ -761,4 +771,9 @@ header h2
     font-weight: bold;    
 }
 
-
+.siema {
+    padding: 0px;
+    width: 100%;
+    max-height: 500px;
+    
+}
