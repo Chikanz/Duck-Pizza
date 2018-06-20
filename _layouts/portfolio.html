@@ -27,17 +27,15 @@
             {% if page.carousel != null %}
             {% assign datastring = site.data.carousel[page.carousel] %}
             
-            <div class ="simaContainer">
+            <div class ="simaContainer round">
                 <div class="siema center">
                     
                     {% for picture in datastring %}
-                    
-                        {% capture firstletter %} {{ datastring | slice: 0 }} {% endcapture %}
-                    
-                        {% if firstletter == "/" %}
-                            <img class="img-responsive" src="{{ picture.url }}" alt="{{ picture.caption}}">   
+                        {% capture firstletter %} {{ picture.url | slice: 0 }} {% endcapture %}
+                        {% if firstletter == " / " %}
+                            <img class="img-responsiv round center" style="height: 100%; width: 100%; object-fit: cover" src="{{ picture.url }}" alt="{{ picture.caption }}">   
                         {% else %}
-                            <div class='gfyitem center' data-id=FeminineGrossGuppy style="height: 100%; margin:auto;"></div>        
+                            <div class='gfyitem center round' data-id={{ picture.url }} style="height: 100%; margin:auto;"></div>        
                         {% endif %}
                         
                     {% endfor %}    
@@ -50,7 +48,10 @@
             </div>
             
             {% if page.itch != null %}
-            <iframe frameborder="0" src="https://itch.io/embed/{{page.itch}}" width="552" height="167" style="float:center"></iframe>
+            <div class="round" style="width:100%; text-align: center">
+                <iframe frameborder="0" src="https://itch.io/embed/{{page.itch}}" style="width:30vw; height:165; resize: both; float:center"></iframe>
+            </div>
+            
             {% endif %}
             
             <hr class="star-primary">
