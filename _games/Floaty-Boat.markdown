@@ -5,7 +5,13 @@ img: floaty.jpg
 project-date: Jan 2017
 project-num: 3
 carousel: floaty
+
 itch: 125033
+itch-border: 0
+itch-BG: 8ecb5d
+itch-text: 222222
+itch-button: 079cbc
+itch-border-col: 90cfcf
 
 
 icons:

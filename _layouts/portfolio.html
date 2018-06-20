@@ -33,9 +33,9 @@
                     {% for picture in datastring %}
                         {% capture firstletter %} {{ picture.url | slice: 0 }} {% endcapture %}
                         {% if firstletter == " / " %}
-                            <img class="img-responsiv round center" style="height: 100%; width: 100%; object-fit: cover" src="{{ picture.url }}" alt="{{ picture.caption }}">   
+                            <img class="img-responsive round center" style="margin:auto" src="{{ picture.url }}" alt="{{ picture.caption }}">   
                         {% else %}
-                            <div class='gfyitem center round' data-id={{ picture.url }} style="height: 100%; margin:auto;"></div>        
+                            <div class='gfyitem center round' data-id={{ picture.url }} style="height: 100%; margin:auto;"></div>       
                         {% endif %}
                         
                     {% endfor %}    
@@ -49,7 +49,8 @@
             
             {% if page.itch != null %}
             <div class="round" style="width:100%; text-align: center">
-                <iframe frameborder="0" src="https://itch.io/embed/{{page.itch}}" style="width:30vw; height:165; resize: both; float:center"></iframe>
+                <!--<iframe frameborder="0" src="https://itch.io/embed/{{page.itch}}" style="width:30vw; height:165; resize: both; float:center"></iframe>-->
+                <iframe frameborder="0" src="https://itch.io/embed/{{page.itch}}?linkback=true&amp;border_width={{page.itch-border}}&amp;bg_color={{page.itch-BG}}&amp;fg_color={{page.itch-text}}&amp;link_color={{page.itch-button}}&amp;border_color={{page.itch-border-col}}"></iframe>
             </div>
             
             {% endif %}

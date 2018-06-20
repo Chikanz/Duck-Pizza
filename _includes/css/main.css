@@ -499,7 +499,7 @@ footer .footer-below {
 }
 
 .bgtext {
-    position: relative;
+    /*position: relative;*/
     z-index: 2;
     filter : blur(0px);
 }
@@ -535,6 +535,11 @@ footer .footer-below {
 #portfolio_content h1
 {
     font-size: 5em;
+}
+
+#portfolio_content h2
+{
+    font-size: 3em;
 }
 
 /* content styling */
@@ -758,7 +763,6 @@ nav
     }
 }
 
-
 header h1
 {
     font-size: 7em;    
@@ -771,9 +775,25 @@ header h2
     font-weight: bold;    
 }
 
+
+@media (max-width: 450px)
+{
+    header h1
+    {
+        font-size: 5em;    
+    }
+
+    header h2
+    {
+        font-size: 2em;   
+    }
+}
+
+
 .siema {
     /* width: 100%; */
-    max-height: 500px;
+    /*max-height: 500px; */
+    max-height: 50vh;
 }
 
 .simaContainer
@@ -789,3 +809,25 @@ header h2
 {
     text-align: center;
 }
+
+#portfolio_content iframe
+{
+    width:30vw;
+    height:165;
+    resize: both;
+    float:center
+} 
+
+@media (max-width: 768px)
+{
+    .simaContainer
+    {
+        padding: 0px;
+    }
+
+    #portfolio_content iframe
+    {
+        width:50vw;
+    }
+}
+

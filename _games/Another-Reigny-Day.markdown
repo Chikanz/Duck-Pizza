@@ -4,7 +4,7 @@ subtitle: VR Castle defence game
 img: reigny.jpg
 project-date: Jan 2016
 project-num: 1
-carousel: pics
+carousel: Reigny
 
 icons:
  - top: unity 
@@ -18,5 +18,5 @@ icons:
 Coming to Steam... soonish
 
 
-I helped make this piece as a part of a small team working as an intern for Mega Cat Studios. I worked on code and design work for the game as well as other small odd jobs.
+I helped make this piece as a part of a small team working as an intern for [Mega Cat Studios](https://megacatstudios.com/). I worked on code and design work for the game as well as lots of other small odd jobs.
 
