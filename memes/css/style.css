@@ -1,0 +1,756 @@
+@import url("bubbleAnim.css");
+
+* {
+    margin:0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+section {
+    width: 100%; height:100vh; padding:10vh 10vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:3vmin;
+    overflow: hidden;
+    position: relative; /*For absolute elements*/
+}
+
+h1 {
+  font-size: 10vmin;
+}
+
+body { height: 100vh; overflow: hidden; }
+
+.author {
+  font-size: 4vmin;
+}
+
+div p {
+  margin:1em 0;
+}
+
+#loading { 
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background: #454545; 
+    font-family: Roboto;
+    font-size: 7vmin;
+    color:#fff;
+    animation: pulse 15s infinite ease;       
+}
+
+@keyframes pulse
+{
+    0%{ background: #000;}
+    50%{ background: #454545;}
+    100%{background: #000;}
+}
+
+/*loader*/
+.loader {
+  width: 3vmin;
+  height: 3vmin;
+  background-color: #fff;
+
+  border-radius: 50%;
+  display: inline-block;  
+    animation: bouncy 1.4s infinite ease;
+}
+
+/*offsets*/
+.d1 {animation-delay: -0.4s;}
+.d2 {animation-delay: -0.2s;}
+
+@keyframes bouncy {
+    0% { transform: scale(0) }
+    50% { transform: scale(1.0) }
+    100% { transform: scale(0) }
+}
+
+.loaded { 
+    opacity: 0;
+    transition: opacity 1s;
+    pointer-events: none; 
+    animation: none;
+} 
+/************************************/
+
+.disapear
+{
+    display:none;
+}
+
+
+/* Navigation */
+.logo, .topBar, .fixed, nav, .topBar h1, .topBar h2, nav .selected img
+{
+     transition: 0.5s;
+}
+
+.logo
+{
+    position: fixed;
+    z-index: 4;
+    height: 5.5vh;
+    width: 11vmin;
+    
+}
+
+#topBar {    
+    width: 100%;
+    height: 5.5vh;
+    position: fixed;
+    background-color: #383838;
+    z-index: 3;
+    display:inline-flex;
+}
+
+.shadow
+{
+    box-shadow: 0px 1px 17px -2px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+
+#title
+{
+    padding-left: 13vmin;
+    padding-top: 0.5vmin;
+    z-index: 3;    
+    font-family: Roboto Slab, Helvetica, sans-serif;
+    color: white;   
+    font-size: 3.5vh;
+}
+
+#subtitle
+{
+    padding-left: 1.5vmin;
+    padding-top:2.3vmin;
+    z-index: 3;    
+    left: 60vmin;
+    font-family: Roboto, Helvetica, sans-serif;
+    color: white;   
+    font-size: 2vh;
+    top:2vmin;
+    font-style: italic;    
+    color: #78787a;
+}
+
+
+nav {
+    position:fixed;
+    /*top:20vh; left:2vmin;*/
+    font-family: Arial, Helvetica, sans-serif;
+    z-index:1;
+    height: 100%;    
+    background-color: #2b2b2b;
+    padding:2vmin;
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+
+nav a 
+{
+    width: 7vmin; height:7vmin; 
+    margin-bottom:4vmin;    
+    background:rgba(255, 255, 255, 0); color:#78787a;
+    border-radius: 50%;
+    font-size: 4vmin; text-align:center; line-height:8vmin; text-decoration:none;  
+    box-shadow: 0 0 0 2pt #78787a;    
+    transition: 0.5s;
+}
+
+nav a img:hover
+{
+    transition:0.5s;
+    filter: brightness(100%);
+}
+
+nav .selected 
+{ 
+    box-shadow: 0 0 0 2pt #faf56d;    
+    transition: 0.5s;
+}
+
+
+nav .selected img
+{
+    filter: brightness(100%);
+}
+
+nav a img 
+{
+    transition:0.5s;
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+    filter: brightness(60%)  grayscale(100%);
+    object-fit:cover;
+}
+
+/*Desc*****************************/
+
+.description 
+{    
+    background-color: rgba(0, 0, 0, 0.39);          
+    position: absolute;
+    box-shadow: 0px 1px 17px -2px rgba(0,0,0,0.75);   
+    width:44vmin;
+}
+
+.description h3
+{
+    padding: 2vmin;
+    padding-bottom: 0px;
+    font-size: 3vmin;
+    font-family: 'Roboto Slab', serif;
+}
+
+.description p
+{
+    padding-left: 2vmin;
+    padding-right: 3vmin;
+    padding-top: 2vmin;
+    margin: 0;
+    font-size: 2vmin;
+    font-family: 'Roboto Condensed', serif;
+}
+
+/************************************************************/
+/* MAF intro*/
+
+#theboys { /*and a cold one*/
+    margin: auto;
+}
+
+#intro {  
+    background-color: #383838;    
+    color: #fff;
+    font-family: 'Roboto Slab', serif; 
+    text-align: center;  
+}
+
+#intro h3
+{    
+    font-weight: normal;
+    font-family: 'Kumar One', cursive;
+    transform: scale(1,1.2);    
+    padding-bottom: 1vmin;
+    color: #bebebe;
+}
+
+#intro h1 {    
+    font-family: 'Kumar One', cursive;
+    font-weight: normal;
+    transform: scale(1,1.2);   
+    color: #faf56d;
+    padding-bottom: 2vmin;
+}
+
+#intro .sub {  
+    margin-left:20vmin;
+    margin-right:20vmin;
+    color: #bebebe;    
+    font-size: 4vmin;
+}
+
+#logomuted {
+    position: absolute;
+    width: 20vmin;
+    bottom: 0px;
+}
+
+/* Egypt  */
+
+#egypt {
+    justify-content: space-around; /* spaces things nicely */
+  background-image: url(p2.jpg);  
+  background-size:cover;
+  color: #fff;
+  font-family: Oxygen, sans-serif;
+}
+
+#egypt h1 {
+  font-family: Katibeh, cursive;
+}
+
+
+
+#egypt .author {
+  font-family: Katibeh, cursive;
+  color: #aaeeff;
+}
+
+#egypt h3
+{
+    flex-grow: 0.3;
+}
+
+
+.images {
+    display:flex;
+    justify-content:space-between;
+    width:90%;    
+    flex-grow: 1;
+}
+
+#egypt a img {
+    width:15vw;  
+    height:15vw;  
+    object-fit: cover;
+}
+
+#egypt a {
+    width:15vw;  
+    height:15vw;  
+    box-shadow:0 5px 20px #000;
+    transition: 0.5s;
+}
+
+#egypt a:hover {    
+    transform: translateY(-20px);
+    box-shadow:0 20px 40px #000;
+}
+
+#egypt .description
+{    
+    height: 40vmin;
+    left: 14vw;
+    bottom:0px;
+}
+
+
+/* Ancient Delivery*/
+
+#delivery {
+  background: url(p1.png);
+  background-size: cover;
+  color: #fff;
+  font-family: 'Arima Madurai', cursive;
+  text-shadow: 0 2px 1px #000;
+}
+
+#delivery h1 {
+  font-family: 'Tulpen One', cursive;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+}
+
+#delivery .description
+{
+    height: 72vmin;
+    right: 0vw;
+    bottom:10vh;
+}
+
+#pc
+{
+    position: absolute; 
+    width: 40vmin;
+    left: 29vw;
+    top: 40vh;    
+    transform:  translate(-6px,-48px)  rotate(5deg) ;
+}
+
+.pcAnim
+{
+    animation: pcBounce 2.5s linear;    
+}
+
+@keyframes pcBounce{
+  0% {
+      
+      top: -300vh; 
+    /*transform:  translate(0px,-200vh);*/
+  }
+    
+  25% {
+      top: 40vh; 
+    transform:  translate(-7px,-40px)  rotate(-7deg);
+  }
+  30% {
+    transform:  translate(-6px,-92px)  rotate(5deg);
+  }
+  35% {
+    transform:  translate(-6px,-48px)  rotate(5deg);
+  }
+  100% {
+      top: 40vh; 
+    transform:  translate(-6px,-48px)  rotate(5deg) ;
+  }
+}
+
+#rock 
+{
+    position: absolute;    
+    bottom:0;
+    left: 25vw;
+    width: 60vmin;
+    height: 48vmin;
+}
+
+#glow
+{
+   position: absolute;    
+    width: 60%;    
+    left: 10vw;
+    top:5.5vh;
+    opacity: 0;
+}
+
+.glowAnim
+{
+    animation: glowAnim 1.5s linear;
+}
+
+@keyframes glowAnim {
+    0%{
+        opacity: 0;
+    } 
+     20%{
+        opacity: 1;
+    }
+    
+     40%{
+        opacity: 0.6;
+    }
+    
+     60%{
+        opacity: 0.9;
+    }
+    
+     100%{
+        opacity: 0;
+    }
+}
+
+
+/*  Dark ages */
+#dark {
+  background-image: url(p3.png); 
+  background-size: cover;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  text-shadow: 0 1px 3px rgba( 0,0,0,1 );
+}
+
+#dark .pot
+{
+    position: absolute;
+    width: 50vmin; 
+    bottom: 0px;
+    left: 60vmin;
+    z-index: 2;
+}
+
+#dark .description
+{
+    height: 52vmin;
+    right: 5vw;
+    bottom:0vh;
+}
+
+.bubble
+{
+    position: absolute;
+    width: 15vmin;
+    height: 15vmin;
+    z-index: 1;
+    animation: bubble1 8s linear infinite;
+    left: 80vmin;
+    bottom: 10vmin;
+}
+
+.bubbleAlt
+{
+    position: absolute;
+    width: 15vmin;
+    z-index: 1;
+    animation: bubble2 8s linear infinite;
+    left: 80vmin;
+    bottom: 10vmin;
+}
+
+.bubble3
+{
+    left: 80vmin;
+    bottom: 10vmin;   
+    animation-delay: -9s;
+}
+
+.bubblepic
+{    
+    opacity: 0.3;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Industrial Rev****************************************************/
+
+#rev {
+    background-image: url(p4.jpg);
+}
+
+#rev .description 
+{
+    color: #fff;
+    height: 61vmin;
+    left: 5.5vw;
+    bottom:0vh;
+}
+
+#rev #paper {
+    position: absolute;
+    right: 3vmin;
+    bottom: 0px;    
+}
+
+.paperanim
+{
+    animation-delay: 1s;
+    animation: paperin 2s ease-in-out;
+}
+
+@keyframes paperin
+{
+    0% {transform: translateY(800px);}
+    80% {transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
+}
+
+
+#finito {
+    background: #383838;    
+    font-family: 'Roboto Slab';
+    color: #bebebe;
+}
+
+/* finito ****************************************/
+#logoend {
+    width: 20vmin;
+}
+
+#finito h1{
+    font-family: 'Kumar one', cursive;
+    color: #faf56d;
+    padding: 30px;
+}
+
+#finito #thanks{
+    font-family: 'Roboto', cursive;
+    color: #bebebe;
+    font-size: 3vmin;
+    margin: 7vmin 10vmin;
+    margin-top: 0vmin;
+    
+}
+
+input{
+ 
+}
+
+#message
+{
+    border: 5px solid #bebebe;   
+    border-radius: 0%;
+    color: #bebebe;
+    background: #383838;
+    
+    width: 100vmin;
+    
+    font-size: 30px;
+
+    text-align: left;
+    padding: 2vmin 2vmin;
+    
+    resize: none;
+    transition: 0.5s;
+    
+    font-family: 'Roboto';
+    
+    border-radius: 10px;
+        
+}
+
+#message:focus
+{
+    border: 5px solid #faf56d;   
+    color:#faf56d;
+}
+
+#message:focus div #remaining {
+    color: #bebebe;
+}
+
+#remaining {
+    font-family: 'Roboto Condensed';
+    color: #bebebe;
+}
+
+#submit {    
+    float: right;
+    padding: 5px 20px;
+    border-radius:50px;
+    background: #383838;
+    border: solid #bebebe;
+    color: #bebebe;
+    font-size: 3vmin;
+    font-family: 'Roboto';
+    margin: 10px;
+    margin-right: 0px;
+    transition: 0.5s;
+}
+
+#submit:hover
+{
+    border: solid #faf56d;
+    color: #faf56d;
+    transition: 0.5s;
+}
+
+#finito img {
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+        width: 13vmin;
+    height: 13vmin;
+}
+
+#finito img:hover{
+    transform: scale(1.3,1.3);
+    transition: 0.5s;
+}
+
+#smol1 {
+    color:#faf56d;
+    padding-bottom: 0px;
+}
+
+#smol2 {
+    position: absolute;
+    color:#787878;
+    font-size: 15px;
+    font-family: 'Roboto';
+    bottom: 5px;
+    
+}
+
+.circle {
+    width: 13vmin;
+    height: 13vmin;
+    color: red;
+}
+
+.row {
+    display: inline;
+}
+
+.pics {
+    display: flex;
+}
+
+.img-wrapper {
+    display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;      /* hide the overflow */
+    width: 13vmin;
+    height: 13vmin;
+    border-radius: 50%;
+    border: solid #faf56d 3px;
+    margin: 10px;
+}
+
+#war {
+    background-image: url(p5.jpg);
+    object-fit:cover;
+}
+
+/**** war time ****/
+#vid {
+    position: absolute;
+    width:  75vmin;
+    top: 29vmin;
+    left: 60vmin;
+    box-shadow: 0px 0px 51px 5px rgba(0,0,0,0.75);
+    
+}
+
+#war .description
+{
+    color: #fff;
+    left: 5.5vw;
+    bottom: 0px;
+    height: 55vmin;
+}
+
+
+
+#today {
+    background: #33b3e3;
+    z-index: -999;
+}
+
+#modernBG {
+    position: absolute;
+    width: 100%;
+    left: 10vmin;
+    top: 0px;    
+}
+
+#glob {
+    position: absolute;
+    top: 26vmin;
+    right: 70vmin;
+    width: 15vmin;    
+    z-index: -1;
+}
+
+#fb {
+    position: absolute;
+    top: 26vmin;
+    right: 73vmin;
+    width: 10vmin;       
+    z-index: -1;
+    animation: spiny 10s linear infinite;    
+    animation-delay: 0s;
+}
+
+#twit {
+    position: absolute;
+    top: 26vmin;
+    right: 73vmin;
+    width: 10vmin;       
+    z-index: -1;
+    animation: spiny 10s linear infinite;    
+    animation-delay: 6.6s;
+}
+
+#reddit {
+    position: absolute;
+    top: 26vmin;
+    right: 73vmin;
+    width: 10vmin;       
+    z-index: -1;
+    animation: spiny 10s linear infinite;
+    animation-delay: 3.3s;
+    
+}
+
+#today .description
+{
+    color: #fff;
+    left: 11vmin;
+    top:5.5vmin;
+}
+
+@keyframes spiny
+{
+    0% { transform: rotate(0deg) translateX(-9vw) rotate(0deg);}
+    100%{transform: rotate(360deg) translateX(-9vw) rotate(-360deg);}
+}
