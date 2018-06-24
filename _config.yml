@@ -46,6 +46,9 @@ social:
 markdown: kramdown
 permalink: pretty
 
+#nav modifier
+navmulti: 1.5
+
 #font fix
 webrick:
   headers:

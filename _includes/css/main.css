@@ -794,6 +794,18 @@ header h2
     /* width: 100%; */
     /*max-height: 500px; */
     max-height: 50vh;
+    overflow: visible;    
+}
+
+.siema img
+{
+    max-height: 50vh;
+    width: auto;
+}
+
+.gfyitem
+{
+    max-height: 50vh;
 }
 
 .simaContainer
@@ -803,6 +815,7 @@ header h2
     margin-bottom: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     background-color: #{{site.color.primary-dark}};
+    overflow: hidden;
 }
 
 .center
@@ -831,3 +844,48 @@ header h2
     }
 }
 
+.links ul
+{
+    padding: 0px;
+}
+
+.links ul li
+{
+    transition: 0.5s;
+    display: inline-block;    
+    font-size: 40px;    
+    padding: 7px;
+    padding-bottom: 0px;
+}
+
+.links ul li a
+{
+    position: relative;
+    text-decoration: none;
+    color:  #{{site.color.third}};
+
+    transition: 0.5s;
+}
+
+.links ul li a :hover
+{
+
+    transition: 0.5s;
+    font-size: 45px;    
+    text-decoration: none;
+    color:  #{{site.color.secondary}};
+}
+
+.links
+{
+    width: 20%;
+    text-align: center;    
+    margin: 0 auto;
+    background-color: #{{site.color.primary-dark}};
+}
+
+.portfolioFooter
+{
+    text-align: center;
+    font-size: 1.2em;
+}

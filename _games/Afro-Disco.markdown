@@ -2,9 +2,13 @@
 layout: portfolio
 subtitle: Tactical dance off game for mobile
 img: afro.jpg
-project-date: Dec 2017
+project-date: Dec 201 7
 carousel: afro
 project-num: 2
+
+links:
+  - icon: github
+    url: https://github.com/EqualzDee/Afro_Disco
 
 icons:
  - top: unity 

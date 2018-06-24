@@ -13,6 +13,12 @@ itch-text: 222222
 itch-button: 079cbc
 itch-border-col: 90cfcf
 
+links:
+  - icon: github
+    url: https://github.com/Chikanz/FloatyBoats
+  - icon: itch
+    url: https://snootboop.itch.io/floaty-boat
+
 
 icons:
  - top: unity  
