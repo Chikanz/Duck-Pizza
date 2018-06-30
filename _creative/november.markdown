@@ -20,9 +20,9 @@ links:
     url: https://snootboop.itch.io/november
 
 icons:
- - top: maya
- - top: ps 
+ - top: unity 
  - top: itch 
+ - top: maya
 ---
 
 *november* is a short horror/escape room/walking simulator I made for Uni with the theme being 'Escape'. It's the first game I've made where I also made the models and sound. Sounds were sourced from <a href="freesound.org">freesound.</a>
