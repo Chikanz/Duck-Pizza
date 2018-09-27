@@ -32,8 +32,7 @@ h4,
 h5,
 h6 {
     text-transform: lowercase;
-    font-family: "pepperoni_pizzaregular","Helvetica Neue",Helvetica,sans-serif;
-    
+    font-family: "pepperoni_pizzaregular","Helvetica Neue",Helvetica,sans-serif;    
 }
 
 hr.star-light,
@@ -828,7 +827,7 @@ header h2
     width:30vw;
     height:165;
     resize: both;
-    float:center
+    float:center;
 } 
 
 @media (max-width: 768px)

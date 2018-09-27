@@ -7,6 +7,6 @@ alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
-description: Can you tell this website isn't done yet? Please leave and don't click anything on your way out thank you good bye.
+description: Bacon ipsum dolor amet andouille fatback boudin tri-tip, beef sirloin drumstick alcatra sausage. Short ribs t-bone alcatra boudin ham hock ham. Turkey jowl cow biltong kevin. Cow short loin shoulder landjaeger swine pork belly t-bone turkey picanha
 
 ---
