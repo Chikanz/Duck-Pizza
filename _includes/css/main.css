@@ -30,9 +30,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    text-transform: lowercase;
-    font-family: "pepperoni_pizzaregular","Helvetica Neue",Helvetica,sans-serif;    
+h6 {    
+    /*font-family: "pepperoni_pizzaregular","Helvetica Neue",Helvetica,sans-serif;    */
+    font-family: 'Lobster';
 }
 
 hr.star-light,
@@ -151,8 +151,9 @@ header .intro-text .skills {
 }
 
 .navbar {
-    text-transform: lowercase;
-    font-family: "pepperoni_pizzaregular",Montserrat,sans-serif;
+
+    /*font-family: "pepperoni_pizzaregular",Montserrat,sans-serif;*/
+    font-family: 'Lobster', cursive;
     /*font-weight: 700;*/
     font-size: 22px;
 }
@@ -461,7 +462,7 @@ footer .footer-below {
 }
 
 .navbar-nav>.active>a {
-    background-color: #{{ site.color.primary-dark }} !important;
+    background-color: #{{ site.color.primary }} !important;
 }
 
 /* Fix modal mouse wheel issues */
@@ -750,7 +751,7 @@ nav
     height: 80%;
     display:block;
     margin:auto;
-    border: 1rem solid #{{site.color.primary}};
+    border: 1rem solid #{{site.color.secondary}};
 }
 
 @media (max-width: 768px)
@@ -789,17 +790,20 @@ header h2
 }
 
 
-.siema {
-    /* width: 100%; */
-    /*max-height: 500px; */
-    max-height: 50vh;
-    overflow: visible;    
+.siema {    
+    overflow: hidden;    
 }
 
 .siema img
 {
-    max-height: 50vh;
-    width: auto;
+    max-width: 100%;
+    overflow: hidden; 
+}
+
+.siema video
+{
+    max-width: 100%;
+    overflow: hidden; 
 }
 
 .gfyitem
@@ -887,4 +891,79 @@ header h2
 {
     text-align: center;
     font-size: 1.2em;
+}
+
+.pointer
+{
+  position: relative;
+  height: 0%;
+  font-size: 3vw;
+  top: -10vh;
+  left: -3vw;
+  animation: touchy 8s infinite; 
+}
+
+:root  {
+    --x1: 70vmin;
+    --x2: 20vmin;
+  }
+
+@keyframes touchy
+{
+  0%
+  {
+    transform: translateX(var(--x1))
+    scale(1.2)
+    rotate(-85deg)
+    ;
+  }
+  9%
+  {
+    transform: translateX(var(--x1))
+    scale(1)
+    rotate(-80deg)
+    ;
+  }
+  10%
+  {
+    transform: translateX(var(--x1))
+    scale(1)
+    rotate(-80deg)
+    ;
+  }
+  50%
+  {
+    transform: translateX(var(--x2))
+    translateY(1vw)
+    rotate(-110deg)
+    ;
+  }  
+  60%
+  {
+    transform: translateX(var(--x2))
+    translateY(1vw)
+    rotate(-100deg)
+    scale(1.2)
+    ;
+  } 
+  100%
+  {
+    transform: translateX(var(--x1))
+    scale(1.2)
+    rotate(-85deg)
+    ;
+  } 
+}
+
+/*Fade out for siema hand*/
+.pointerFade
+{
+  animation: touchy 8s infinite, fade 2s;
+  color: rgba( 0,0,0, 0 )
+}
+
+@keyframes fade
+{
+  0% {color: rgba( 0,0,0, 1 )}
+  100% {color: rgba( 0,0,0, 0 )}
 }

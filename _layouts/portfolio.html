@@ -33,11 +33,19 @@
                         {% capture firstletter %} {{ picture.url | slice: 0 }} {% endcapture %}
                         {% if firstletter == " / " %}
                             <img class=" round center" src="{{ picture.url }}" alt="{{ picture.caption }}">   
-                        {% else %}
-                            <div class='gfyitem center round' data-id={{ picture.url }} style="height: 100%; margin:auto;"></div>       
+                        {% else %}                            
+                            <video muted autoplay loop preload="auto" class="round">
+                                <source src="https://giant.gfycat.com/{{ picture.url }}.webm" type="video/webm">
+                                <source src="https://giant.gfycat.com/{{ picture.url }}.mp4" type="video/mp4">
+                                <source src="https://thumbs.gfycat.com/{{ picture.url }}-mobile.mp4" type="video/mp4">
+                            </video>                            
+                     
                         {% endif %}
                         
                     {% endfor %}    
+                </div>
+                <div style="position: absolute">
+                    <h1 class="pointer">👉</h1>
                 </div>
             </div>
             {% endif %}            
@@ -79,8 +87,10 @@
     <script src="https://cdn.rawgit.com/pawelgrzybek/siema/9534e7b7/dist/siema.min.js"></script>
     <script>
         new Siema({
-            loop: true
+            loop: true,
+            onChange: onChangeCallback,
         });
+        if(localStorage.getItem('tutorialDone')) document.querySelector('.pointer').remove(); //Auto remove pointer
     </script>
     {% endif %}
     

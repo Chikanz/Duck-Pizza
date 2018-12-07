@@ -35,3 +35,47 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+//Force autoplay all videos (FUCK CHROME)
+var videos = document.getElementsByTagName("video");
+for(var i = 0; i < videos.length; i++)
+{
+    //setTimeout(function(){autoPlay(videos[i])}, 2000);
+    videos[i].addEventListener("pointermove",function()    
+    {
+        this.muted = true;
+        this.play();
+    })
+}
+
+function autoPlay(vid)
+{        
+    console.log(document.readyState);
+    console.log(vid.paused);
+    vid.muted = true;
+    vid.play();           
+}
+
+//Pointer from gay frogs
+//Fade out hand anim on siema slide changed
+var removed = false; //Flag to only trigger once
+function onChangeCallback() 
+{
+    if (!removed) 
+    {
+        localStorage.setItem('tutorialDone', 'yepo');
+		removed = true;
+		var hand = document.querySelector('.pointer');
+		hand.classList.add('pointerFade');
+
+		setTimeout(() => {
+			hand.remove();
+		}, 4000); //delayed remove after fade for E F F I C I E N C Y
+	}
+
+	//Change caption text
+	updateCaptions(this.currentSlide);
+
+	//Update the background with blurred slide images
+	updateBG(this.currentSlide)
+}
