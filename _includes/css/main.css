@@ -30,9 +30,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {    
-    /*font-family: "pepperoni_pizzaregular","Helvetica Neue",Helvetica,sans-serif;    */
-    font-family: 'Lobster';
+h6 
+{        
+    font-family: 'Fredoka One';
 }
 
 hr.star-light,
@@ -153,9 +153,19 @@ header .intro-text .skills {
 .navbar {
 
     /*font-family: "pepperoni_pizzaregular",Montserrat,sans-serif;*/
-    font-family: 'Lobster', cursive;
-    /*font-weight: 700;*/
+    font-family: 'Fredoka One';
+        
     font-size: 22px;
+}
+
+.righteous
+{
+    font-family: 'Righteous', cursive;
+}
+
+.lower
+{
+    text-transform: lowercase;
 }
 
 .navbar a:focus {
