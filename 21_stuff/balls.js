@@ -1,3 +1,4 @@
+
 // Matter.js module aliases
 var Engine = Matter.Engine,
     Render = Matter.Render,
@@ -44,7 +45,7 @@ var boxA = Bodies.rectangle(width / 2, height / 4, 400, 100,
     render: {
         sprite:
         {
-            texture: "./img/title.png"
+            texture: "./21_stuff/img/title.png"
         }
     }
     }
@@ -63,15 +64,15 @@ var constraint = Constraint.create({
 World.add(engine.world, [boxA, constraint]);
 
 //balls
-AddBall("./img/ball.png");
-AddBall("./img/address.png");
-AddBall("./img/plus1.png");
-AddBall("./img/dransk.png");
-AddBall("./img/beetsaber.png");
-AddBall("./img/pizza.png");
-AddBall("./img/ping.png");
-AddBall("./img/dumb.png");
-AddBall("./img/droops.png");
+AddBall("./21_stuff/img/ball.png");
+AddBall("./21_stuff/img/address.png");
+AddBall("./21_stuff/img/plus1.png");
+AddBall("./21_stuff/img/dransk.png");
+AddBall("./21_stuff/img/beetsaber.png");
+AddBall("./21_stuff/img/pizza.png");
+AddBall("./21_stuff/img/ping.png");
+AddBall("./21_stuff/img/dumb.png");
+AddBall("./21_stuff/img/droops.png");
 
 // mouse control
 var mouse = Mouse.create(render.canvas),
