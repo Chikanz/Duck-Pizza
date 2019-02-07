@@ -1,0 +1,87 @@
+<html>
+
+<head>
+
+</head>
+
+
+<style>
+	video {
+		width: 100%;
+		height auto;
+	}
+
+	.container {
+		height: 100%;
+		width: 100%;
+	}
+
+	html {
+		box-sizing: border-box;
+		font-size: 16px;
+		background-color: #26014d;
+	}
+
+	.hide {
+		width: 1px;
+		height: 1px;
+	}
+
+	*,
+	*:before,
+	*:after {
+		box-sizing: inherit;
+	}
+</style>
+
+<body>
+	<div style='position:relative; padding-bottom:calc(56.27% + 44px)'>
+		<iframe src='https://gfycat.com/ifr/respectfulcourteousaoudad?controls=0&hd=1'
+		 frameborder='0' scrolling='no' width='100%' height='80%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe>
+		</div>	
+</body>
+
+<script>
+	var slides =
+		[
+			//Time perception
+			"respectfulcourteousaoudad", //nback
+			"possibledependablegrackle", //nback monitor
+			"easygoingamusinghypacrosaurus", //mazeNav
+			"talkativevigilantflycatcher", //Duck 1
+			"HalfInfatuatedBeagle", //vr duck
+			"ellipticalrawkingbird", //time prompt
+
+			//Haptics
+			//Haptic redirection
+			"gargantuanuntriederne", //Body warp
+			"plaintivefarflunggrayfox", //World warp
+			"helplesspotablegermanshorthairedpointer", //PSE (detirmine the best angle)
+			"lateformalfruitbat", //INT (Interval estimation to see how much agency)
+		];
+
+	var headers =
+		[
+			"https://gfycat.com/ifr/"
+		]	
+
+	var slideNumber = 0;
+
+	document.onkeydown = checkKey;
+	function checkKey(e) {
+		e = e || window.event;
+
+		if (e.keyCode == '37') // left arrow
+		{
+			if (slideNumber > 0) slideNumber--;
+		}
+		else if (e.keyCode == '39') //Right arrow
+		{
+			if (slideNumber < slides.length) slideNumber++;
+		}
+		
+		document.querySelector('iframe').setAttribute('src', headers[0] + slides[slideNumber] + "?controls=0&hd=1");	
+	}	
+</script>
+
+</html>
