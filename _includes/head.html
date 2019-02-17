@@ -12,14 +12,9 @@
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     
-    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <!-- Critical css-->
-    
-    
     <!-- Load non critical css first with rel=preload -->
     <link rel="stylesheet" rel="preload" href="{{ "/non-crit.css" }}" async>
     <link rel="stylesheet" href="{{ "/style.css" }}" async>
-
 
     <!-- Google verification -->
     {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
@@ -28,7 +23,7 @@
     {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
     <!-- Custom Fonts -->        
-    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Fredoka One|Righteous" rel="stylesheet" type="text/css" async>    
+    <link href="//fonts.googleapis.com/css?family=Fredoka One|Quicksand:500" rel="stylesheet" type="text/css" async>    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,3 +51,6 @@
 	}
     </style>
 </head>
+
+<!-- Instant page stuff-->
+<script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>

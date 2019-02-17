@@ -14,9 +14,10 @@
                 {% for collection in col %}
                     {% assign name = collection.label %}
                     {%if name != 'posts'%}
-                        <h2 class="Secondary" style="padding:20px;">{{name}}</h2>
+                        <h2 class="Secondary text-capitalize" style="padding:20px;">{{name}}</h2>
                         {% assign posts = site.[name] | sort:'project-num' %}
-                        {% for post in posts %}
+                        {% for i in (0.. site.concat[1]) %}
+                        {% assign post = posts[i] %}
                             <div class="col-sm-4 portfolio-item">
                                 <a href="{{ post.url }}" class="portfolio-link">
                                     <div class="caption round">
@@ -36,6 +37,12 @@
                                 </a>
                             </div>
                         {% endfor %}    
+
+                        {% assign postsSize = posts | size %}
+                        {% if postsSize > site.concat[0] %}
+                        <!--<a href=""><p class="Secondary overflowLink" style="padding:0px 10px">More <span class="icon-chevron-right"></span></p></a>-->
+                        {% endif %}
+
                     {% endif %}
                 {% endfor %}
             </div>

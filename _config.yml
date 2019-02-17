@@ -61,10 +61,9 @@ collections:
     creative:
         output: true
 
-#Bio
-bio:
-    hobbies: "climb rocks, chill out to music or read things"
-    current: "null"
-    client: ""
+#Overflow settings (make sure to set to same length as collections)
+#Length to concat
+concat: [3, 5]
+
     
     

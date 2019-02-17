@@ -84,7 +84,8 @@ header {
     background: #{{ site.color.primary }};
 }
 
-header .container {
+header .container 
+{
     padding-top: 100px;
     padding-bottom: 50px;
 }
@@ -97,7 +98,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Quicksand","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
     padding-bottom: 30vw;
@@ -150,9 +151,8 @@ header .intro-text .skills {
     }
 }
 
-.navbar {
-
-    /*font-family: "pepperoni_pizzaregular",Montserrat,sans-serif;*/
+.navbar 
+{    
     font-family: 'Fredoka One';
         
     font-size: 22px;
@@ -223,7 +223,15 @@ section.success {
     max-width: 400px;
     overflow: hidden;
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+
+    transition: all .2s ease;
     
+}
+
+.portfolio-link:hover 
+{ 
+    transform: scale(1.05); 
+    box-shadow: 0px 14px 30px 0px rgba(0,0,0,1);
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -233,9 +241,7 @@ section.success {
     opacity: 0;
     
     background: rgba({{ site.color.primary-rgb }},.4);
-    
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
+
     transition: all ease .5s;
     
     transform: translateY(-20px);
@@ -563,7 +569,7 @@ footer .footer-below {
 .markdown
 {
     /*font-family: 'Roboto Slab', serif;    */
-    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .markdown .highlight
@@ -620,7 +626,7 @@ nav
 
 /*Portfolio Grid captions*/
 .HoverCaptionTop {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     position: absolute;
     font-size: 2.5em;
     font-weight: bold;
@@ -631,7 +637,7 @@ nav
 }
 
 .HoverCaptionBottom {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     position: absolute;
     font-size: 1.2em;
     font-weight:700;
@@ -672,7 +678,7 @@ nav
 
 .blogpeek p
 {
-    font-family: 'Lato', sans-serif;       
+    font-family: 'Quicksand', sans-serif;       
     text-align:left;
     padding: 20px;
     padding-top: 0px;
@@ -685,7 +691,7 @@ nav
     padding: 20px;
     padding-bottom: 10px;
     padding-top: 0px;
-    font-family: "Lato", serif;    
+    font-family: "Quicksand", serif;    
     font-weight: bold;
     text-transform: none;
 }
@@ -742,7 +748,7 @@ nav
 
 #about p
 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     padding-top: 30px;    
 }
 
@@ -761,7 +767,7 @@ nav
     height: 80%;
     display:block;
     margin:auto;
-    border: 1rem solid #{{site.color.secondary}};
+    border: 5px solid #{{site.color.secondary}};
 }
 
 @media (max-width: 768px)
@@ -781,7 +787,7 @@ header h1
 header h2
 {
     font-size: 3em;  
-    font-family: "Lato";
+    font-family: "Quicksand";
     font-weight: bold;    
 }
 
@@ -977,3 +983,51 @@ header h2
   0% {color: rgba( 0,0,0, 1 )}
   100% {color: rgba( 0,0,0, 0 )}
 }
+
+/* Header */
+
+header *
+{
+    color: #{{site.color.third}};
+}
+
+header h2
+{
+    font-size: 2.5em;
+}
+
+.header-icons span
+{
+    font-size: 3em;
+}
+
+.header-icons div
+{
+    display: inline-flex;
+
+}
+
+.header-icons a
+{
+    text-decoration: none;
+}
+
+.header-icons div:hover
+{
+    transform: translateY(-7px);
+    color: #33b3e3;
+    padding: 0px 15px;        
+}
+
+.header-icons div
+{
+    text-decoration: none;
+    transition: 0.4s ease;
+    padding: 5px;    
+}
+
+.overflowLink
+{
+    text-align: right;
+    width: 100%;
+}   
