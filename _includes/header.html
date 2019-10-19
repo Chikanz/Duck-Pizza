@@ -1,26 +1,20 @@
 <!-- Header -->
 <header>
     <div class="container bgimage">
-        <div class="container bgtext"> 
+        <div class="container bgtext">
             <h1 class="">Zac Lucarelli</h1>
-            <h2>Maker of nice things from Melbourne, Australia</h2>
+            <h2 class="headerFadeIn">Maker of nice things from Melbourne, Australia</h2>
+
             <div class="header-icons">
-                <a href="https://twitter.com/duckpizza_" target="blank" rel="noopener">
+                {% for social in site.social %}
+                <a href="{{social.url}}" target="blank" rel="noopener">
                     <div>
-                        <span class="icon-twitter"></span>
+                        <span class="headerFadeIn icon-{{social.icon}}"></span>
                     </div>
                 </a>
-                <a href="https://github.com/chikanz" target="blank" rel="noopener">
-                    <div>
-                        <span class="icon-github"></span>
-                    </div>
-                </a> 
-                <a href="https://snootboop.itch.io/" target="blank" rel="noopener">
-                    <div>
-                        <span class="icon-itch"></span>
-                    </div>
-                </a>
+                {% endfor %}
             </div>
+
         </div>
     </div>
 </header>

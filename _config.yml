@@ -1,4 +1,4 @@
-# Site settings
+###Config###
 title: Duck Pizza
 email: hi@duck.pizza
 url: https://duck.pizza
@@ -22,7 +22,25 @@ contact: static
 # https://help.disqus.com/customer/portal/articles/466208
 disqus_shortname: myshortname
 
-# Color settings (hex-codes without the leading hash-tag)
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#font fix
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+
+#Collections
+collections:
+    games:
+        output: true
+    creative:
+        output: true
+
+####Theme###
+
+# Color settings (hex-codes without the leading hash)
 color:
   primary: 26014d #rgb(58, 0, 119)
   primary-rgb: "58, 0, 119"
@@ -35,35 +53,24 @@ color:
   link: ffffff #ffffff   
   
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Icon links in the header bar,
+# icon refers to the icomoon font name
 social:
-  - title: twitter
+  - icon: twitter
     url: http://twitter.com/duckPizza_
-  - title: github
+  - icon: github
     url: http://github.com/chikanz
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+  - icon: itch
+    url: https://snootboop.itch.io/
+  - icon: youtube
+    url: https://www.youtube.com/channel/UC_I02j_siBz4y7L06nBjjiA
 
 #nav modifier
 navmulti: 1.5
 
-#font fix
-webrick:
-  headers:
-    Access-Control-Allow-Origin: "*"
-    
-#Collections
-collections:
-    games:
-        output: true
-    creative:
-        output: true
-
-#Overflow settings (make sure to set to same length as collections)
-#Length to concat
-concat: [3, 5]
+#Overflow settings
+#Cap posts at collection index, (i.e. games is capped at X, creative at Y) make sure to set to same length as collections
+concat: [1, 2]
 
     
     

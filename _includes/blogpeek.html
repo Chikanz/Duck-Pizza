@@ -1,4 +1,5 @@
  <!-- Blog peek Section -->
+ <!-- Except that blogs suck ass, so now it's retrofitted for videos-->
     <section class="success" id="blogpeek">
         <div class="container">
             <div class="row">
@@ -11,12 +12,14 @@
                 {% for post in site.posts limit:3 %}
                 <div class="col-md-4">
                     <div class="blogitem card shadow">
-                        <img src="/img/posts/{{post.img}}" class="img-responsive">
+                        <a href="{{post.link}}" target="_blank" rel="noopener" class="Secondary link">
+                            <img src="/img/posts/{{post.img}}" class="img-responsive">
+                        </a>
                         <div class="gradient"></div>
                             <h2>{{post.title}}</h2>
                         <p>
                             {{post.description}}...<br>
-                            <a href="{{post.link}}" target="_blank" rel="noopener" class="Secondary">Read more</a>
+                            <a href="{{post.link}}" target="_blank" rel="noopener" class="Secondary link">Watch now</a>
                         </p>
                     </div>
                 </div>
