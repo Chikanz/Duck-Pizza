@@ -602,11 +602,13 @@ footer .footer-below {
     font-size: 1.5em;
 }
 
+
 .markdown h1,h2,h3
 {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
+
 
 nav
 {
@@ -936,8 +938,7 @@ header h2
 }
 
 .links ul li
-{
-    transition: 0.5s;
+{    
     display: inline-block;    
     font-size: 40px;    
     padding: 7px;
@@ -946,18 +947,18 @@ header h2
 
 .links ul li a
 {
+    
     position: relative;
     text-decoration: none;
     color:  #{{site.color.third}};
-
-    transition: 0.5s;
+    transition: 0.5s;    
 }
 
-.links ul li a :hover
-{
-
-    transition: 0.5s;
-    font-size: 45px;    
+.links ul li a:hover
+{    
+    
+    padding-top: 0px;
+    font-size: 42.5px;    
     text-decoration: none;
     color:  #{{site.color.secondary}};
 }

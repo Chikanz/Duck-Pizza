@@ -2,10 +2,9 @@ import glob, os, subprocess, sys, math
 
 dirs = ["large","medium","small","lquip"]
 scale = [1, 0.6666, 0.4444, 0.1]
-quality = [85, 85, 80, 60]
+quality = [90, 90, 90, 60]
 size = [900, 650]
 basedir = sys.path[0];
-#caesiumdir = basedir + "\\" + "caesiumclt"
 
 
 os.chdir(basedir)

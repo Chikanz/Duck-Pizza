@@ -3,7 +3,7 @@ layout: portfolio
 subtitle: Casual co-op game made at GGJ17
 img: floaty.jpg
 project-date: Jan 2017
-project-num: 3
+project-num: 6
 carousel: floaty
 
 itch: 125033

@@ -4,7 +4,7 @@ subtitle: Tactical dance off game for mobile
 img: afro.jpg
 project-date: Dec 201 7
 carousel: afro
-project-num: 2
+project-num: 5
 
 links:
   - icon: github
