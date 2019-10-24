@@ -17,16 +17,16 @@ links:
 ---
 
 ### What?
-A cute and sometimes dark JRPG about finding lost siblings, cults and the power of friendship.
+A comical, sometimes dark JRPG about finding lost siblings, cults and the power of friendship. Made for Uni for our final year project.
 
 ### Who?
-[@mishdfied](https://twitter.com/mishdfied), [@Eeveeadict](https://twitter.com/Eeveeadict) and Amy De Jong, for Uni.
+[@mishdfied](https://twitter.com/mishdfied), [@Eeveeadict](https://twitter.com/Eeveeadict) and Amy De Jong and Jason Moore
 
 ### Doing?
-Code + a bit of production
+Core gameplay systems, AI, UI + a bit of production
 
 ### Tech?
-Unity, Yarn spinner, Meccanim  
+Unity, Yarn spinner, Meccanim, Scriptable Objects 
 
 ### Anything to brag about?
-Picked to showcase at PAX 2018, as apart of the Arcademia student showcase.
+Picked to showcase at PAX 2018, as apart of the Arcademia student showcase

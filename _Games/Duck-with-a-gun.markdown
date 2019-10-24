@@ -1,26 +1,19 @@
 ---
 layout: portfolio
-subtitle: VR Castle defence game
-img: reigny.jpg
+subtitle: Wacky third person cover shooter
+img: duck.jpg
 project-date: Feb 2019
 project-num: 1
-carousel: Reigny
-
-links:
-  - icon: steam
-    url: https://store.steampowered.com/app/882860/
+carousel: Ducko
 
 icons:
  - top: unity 
- - top: vive
- - top: steam
 ---
 
-*Another Reigny Day* gives you the frantic and hilarious duty of defending a castle stronghold from mythical hordes of enemy creatures. The resources of the realm are at your disposal, including siege weapons like cannons,  giant slingshots, elemental staffs, magic towers and others. Talk to tiny cow kings, wipe poo out of your eyes, flip off waves whimsical enemy classes and more in this wacky VR game for the HTC Vive.
 
+### What?
 
-Coming to Steam... soonish
+Duck with a gun is a third person cover shooter where you play as a duck taking down the mob, John Wick style. It's still at a very early stage of development, but you can follow along with the progress on my [youtube channel](https://www.youtube.com/channel/UC_I02j_siBz4y7L06nBjjiA/).
 
-
-I helped make this as a part of a small team working as an intern for [Mega Cat Studios](https://megacatstudios.com/). I worked on code and design for the game as well as lots of other small odd jobs.
-
+### Who?
+Just me! And maybe some contractors at some point. Who knows!

@@ -35,7 +35,7 @@ Just me! Made for uni in about a week with sounds from [freesound.org](http://fr
 
 ### Anything to brag about? 
 
-~5,000 plays, really nice comments from players, also found its way to some some [random japanese image board](https://bbs.no1game.net/bbs/kareha.cgi/1534811823/) (my proudest achievement)
+~5,000 plays, really nice comments from players, also somehow found its way to a [random japanese image board](https://bbs.no1game.net/bbs/kareha.cgi/1534811823/) (my proudest achievement)
 
 ### Tech?
 

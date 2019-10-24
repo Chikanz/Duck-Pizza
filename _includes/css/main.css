@@ -46,13 +46,11 @@ hr.star-primary {
 }
 
 hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
+hr.star-primary:after {    
     display: inline-block;
     position: relative;
     top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
+    padding: 0 .25em;    
     font-size: 2em;
 }
 
@@ -898,7 +896,7 @@ header h2
 
 .simaContainer
 {
-    padding: 20px;
+    padding: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);

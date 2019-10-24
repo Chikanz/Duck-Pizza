@@ -24,8 +24,8 @@
                         {% capture firstletter %} {{ picture.url | slice: 0 }} {% endcapture %}
                         {% if firstletter == " / " %}
                             <img class=" round center" src="{{ picture.url }}" alt="{{ picture.caption }}">   
-                        {% else %}                            
-                            <img data-id="{{ picture.url }}" class="gfyitem" />                          
+                        {% else %}               
+                            <img data-id="{{ picture.url }}" class="gfyitem" />                            
                         {% endif %}
                         
                     {% endfor %}    

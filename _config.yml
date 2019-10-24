@@ -35,7 +35,7 @@ webrick:
 collections:
     games:
         output: true
-    creative:
+    other:
         output: true
 
 ####Theme###
@@ -70,7 +70,7 @@ navmulti: 1.5
 
 #Overflow settings
 #Cap posts at collection index, (i.e. games is capped at X, creative at Y) make sure to set to same length as collections
-concat: [5, 5]
+concat: [0, 5, 2]
 
     
     
