@@ -16,6 +16,17 @@ links:
  
 ---
 
-*Fruit Head* is a cute and wacky JRPG about finding lost siblings, cults and the power of friendship. It's still in the very early stages development. 
+### What?
+A comical, sometimes dark JRPG about finding lost siblings, cults and the power of friendship. Made for Uni for our final year project.
 
-We're making *Fruit Head* for our Uni capstone unit where we'll continue to make the game over 2018. The other weirdos working on this project are [@mishdfied](https://twitter.com/mishdfied), [@Eeveeadict](https://twitter.com/Eeveeadict) and Amy De Jong.
+### Who?
+[@mishdfied](https://twitter.com/mishdfied), [@Eeveeadict](https://twitter.com/Eeveeadict) and Amy De Jong and Jason Moore
+
+### Doing?
+Core gameplay systems, AI, UI + a bit of production
+
+### Tech?
+Unity, Yarn spinner, Meccanim, Scriptable Objects 
+
+### Anything to brag about?
+Picked to showcase at PAX 2018, as apart of the Arcademia student showcase

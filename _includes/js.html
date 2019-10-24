@@ -1,40 +1,49 @@
- <!-- jQuery Version 1.11.0 -->
-    <!--<script src="{{ "/js/jquery-1.11.0.js" }}"></script>-->
+<!--Jquery 3 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!--Jquery 3 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{% if page.layout == 'default' %}
+<!-- Scroll reveal -->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.portfolio-item', {
+        distance: '-30px',
+        interval: 50,
+        duration: 800
+    });
+    sr.reveal('.blogitem', {
+        distance: '-30px',
+        interval: 200,
+        duration: 1000
+    });
+</script>
+<script src="{{ " /js/GetVids.js " }}"></script>
+{% endif %}
 
-    {% if  page.layout == 'default' %}
-    <!-- Scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script>        
-        window.sr = ScrollReveal();
-        sr.reveal('.portfolio-item');        
-    </script>
-    {% endif %}
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ " /js/bootstrap.min.js " }}"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ "/js/bootstrap.min.js" }}"></script>
+<!-- Plugin JavaScript -->
+<script src="{{ " /js/jquery.easing.min.js " }}"></script>
+<script src="{{ "/js/classie.js" }}"></script>
+<script src="{{ " /js/cbpAnimatedHeader.js " }}"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="{{ "/js/jquery.easing.min.js" }}"></script>
-    <script src="{{ "/js/classie.js" }}"></script> <!-- wot this -->
-    <script src="{{ "/js/cbpAnimatedHeader.js" }}"></script>
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79357523-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'UA-79357523-2');
-    </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-79357523-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
 
-    <!-- Custom Theme JavaScript -->
-    <script src="{{ "/js/freelancer.js" }}"></script>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-    {% if site.contact == "disqus" %}
-    <!-- Disqus Stuff -->
-    {% include js_disqus.html %}
-    {% endif %}
+    gtag('config', 'UA-79357523-2');
+</script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ " /js/freelancer.js " }}"></script>
+
+{% if site.contact == "disqus" %}
+<!-- Disqus Stuff -->
+{% include js_disqus.html %} {% endif %}
