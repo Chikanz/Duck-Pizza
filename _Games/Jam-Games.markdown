@@ -6,9 +6,6 @@ project-date:
 project-num: 6
 carousel: floaty
 
-links:
-
-
 icons:
  - top: unity  
  - top: itch
