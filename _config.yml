@@ -33,10 +33,12 @@ webrick:
 
 #Collections
 collections:
-    games:
+    Games:
         output: true
-    other:
+        sort: project-num
+    Other:
         output: true
+        sort: project-num
 
 ####Theme###
 
