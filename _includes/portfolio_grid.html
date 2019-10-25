@@ -19,7 +19,7 @@
                     {%if name != 'posts'%}
                         {% assign collectionIndex = collectionIndex | plus: 1 %}
                         <h2 class="Secondary text-capitalize" style="padding:20px;">{{name}}</h2>                
-                        {% assign posts = site.[name] %}
+                        {% assign posts = site.[name] | sort:'project-num' %}
                         {% for i in (0.. site.concat[collectionIndex]) %}
                         {% assign post = posts[i] %}
                             <div class="col-sm-4 portfolio-item">
