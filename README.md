@@ -1,4 +1,4 @@
-Duck Pizza  [![Build Status](https://travis-ci.org/Chikanz/Duck-Pizza.svg?branch=master)](https://travis-ci.org/Chikanz/Duck-Pizza)
+Duck Pizza
 =========================
 
 http://duck.pizza
