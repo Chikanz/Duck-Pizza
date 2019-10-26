@@ -73,7 +73,9 @@
     <script>
         new Siema({
             loop: true,
-            onChange: onChangeCallback,
+            onChange: onChangeCallback,        
+            easing: 'ease',
+            duration: 400,
         });
         if(localStorage.getItem('tutorialDone')) document.querySelector('.pointer').remove(); //Auto remove pointer
     </script>

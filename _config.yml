@@ -72,6 +72,19 @@ navmulti: 1.5
 #Cap posts at collection index, (i.e. games is capped at X, creative at Y) make sure to set to same length as collections
 concat: [1, 5, 2]
 
-
+about:
+  - text: Pets
+    icon: bird
+    yeet: small
+  - text: Vinyl
+    icon: vinyl
+  - text: Camping
+    icon: tent
+  - text: Climbing
+    icon: climbing
+  - text: Voulenteering
+    icon: volunteer
+  - text: Indie games
+    icon: gamepad
     
-    
+      

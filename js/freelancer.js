@@ -56,26 +56,69 @@ function autoPlay(vid)
     vid.play();           
 }
 
-//Pointer from gay frogs
-//Fade out hand anim on siema slide changed
-var removed = false; //Flag to only trigger once
-function onChangeCallback() 
-{
-    if (!removed) 
-    {
-        localStorage.setItem('tutorialDone', 'yepo');
-		removed = true;
-		var hand = document.querySelector('.pointer');
-		hand.classList.add('pointerFade');
 
-		setTimeout(() => {
-			hand.remove();
-		}, 4000); //delayed remove after fade for E F F I C I E N C Y
-	}
 
-	//Change caption text
-	updateCaptions(this.currentSlide);
-
-	//Update the background with blurred slide images
-	updateBG(this.currentSlide)
+//Cache courasel elements after gfy load so that they can be reset 
+var CouraselElements = [];
+var CouraselLoadFlag = false;
+function loadCouraselElements() //Get courasel list
+{ 
+    if(CouraselLoadFlag) return;
+    CouraselLoadFlag = true;
+    
+    var ChildElements = document.querySelector('.siema').childNodes[0].childNodes;
+    for (var i = 0; i < ChildElements.length; i++) {
+        CouraselElements.push(ChildElements[i].childNodes[0].childNodes[0]);
+    }
 }
+
+
+var removed = false; //Flag to only trigger once
+function onChangeCallback() {
+    //Pointer from gay frogs
+    //Fade out hand anim on siema slide changed
+    if (!removed) {
+        localStorage.setItem('tutorialDone', 'yepo');
+        removed = true;
+        var hand = document.querySelector('.pointer');
+        if (hand != null) {
+            hand.classList.add('pointerFade');
+
+            setTimeout(() => {
+                hand.remove();
+            }, 4000); //delayed remove after fade for E F F I C I E N C Y
+        }
+    }
+    
+    //Reset gif playback time on change
+    var index = this.currentSlide;
+    for(var i = -1; i < 2; i++)
+    {
+        if(i == 0) continue;
+        
+        var v = CouraselElements[index + i];
+        if(v) 
+        {
+            v.currentTime = 0;
+            v.play();
+        }
+    }
+    
+}
+
+//Resize about icon text dynamically
+var text = document.querySelectorAll(".aboutIcon p");
+for(var i = 0; i < text.length; i++)
+{
+    if(text[i].innerHTML.length > 10)
+    {
+        text[i].style["font-size"] = "20px";
+    }
+}
+
+
+
+
+
+
+

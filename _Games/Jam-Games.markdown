@@ -19,6 +19,7 @@ Chilled out, casual co-op game where you and a friend use the same controller to
 Made with [@evilneth](https://twitter.com/evilneth), Daniel Mcivor, Bruce Fraser and Jeff Dunn
 
 [Play it on itch!](https://snootboop.itch.io/floaty-boat)
+<br/><br/>
 
 ## Game of throne
 ### Global Game Jam 2019
@@ -28,6 +29,8 @@ Race your constipated housemate to be the first to take a poo in the comfort of 
 Made with [@deligirlcee](https://twitter.com/deligirlcee), [@ilpickle](https://twitter.com/ilpickle), [@emileegoulding](https://twitter.com/emileegoulding), [@arobinsonswork](https://twitter.com/arobinsonswork) and [@thesaucefactory](https://www.facebook.com/thesaucefactory/)
 
 [Play it on itch!](https://snootboop.itch.io/got)
+<br/><br/>
+
 
 ## Frantic Fortunes
 ### Locomojam 2019
@@ -38,5 +41,4 @@ Made with [@OrcunNisli](https://twitter.com/OrcunNisli), [@thePlundr](https://tw
 
 [Play it on itch!](https://snootboop.itch.io/frantic-fortunes)
 
-
-*ok like the bulk of these games were made in 48 hours but I definitely polished them up a little after the fact*
+*ok like the bulk of these games were made in 48 hours but I definitely polished them up a little after*

@@ -15,8 +15,9 @@ function loadGifs() {
         $.get(url + gifID, function (data) {
             var controls = data.gfyItem.hasAudio ? "controls" : '';
             var loop = !data.gfyItem.hasAudio ? "loop" : '';
-            var videoString = '<div id="' + blockID + '"><video '+loop+' autoplay="true" muted poster="' + data.gfyItem.posterUrl + '" ' + controls + '><source src="' + data.gfyItem.mp4Url + '" type="video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\""><source src="' + data.gfyItem.webmUrl + '" type="video/webm; codecs=\"vp8, vorbis\""></video></div>'
-            itemImg.replaceWith(videoString)
+            var videoString = '<div id="' + blockID + '"><video '+loop+' autoplay="true" muted poster="' + data.gfyItem.posterUrl + '" ' + controls + '><source src="' + data.gfyItem.mp4Url + '" type="video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\""><source src="' + data.gfyItem.webmUrl + '" type="video/webm; codecs=\"vp8, vorbis\""></video></div>';
+            itemImg.replaceWith(videoString);
+            setTimeout(loadCouraselElements,500);
         });
     })
 }
