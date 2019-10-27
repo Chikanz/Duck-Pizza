@@ -17,7 +17,7 @@ icons:
 ---
 
 ### What?
-*Another Reigny Day* gives you the frantic and hilarious duty of defending a castle stronghold from mythical hordes of fairy tale creatures. The resources of the realm are at your disposal, including siege weapons like cannons,  giant slingshots, elemental staffs, magic towers and others. Talk to tiny cow kings, wipe poo out of your eyes, flip off your enemies and more in this wacky VR game.
+Another Reigny Day gives you the frantic and hilarious duty of defending a castle stronghold from mythical hordes of fairy tale creatures. The resources of the realm are at your disposal, including siege weapons like cannons,  giant slingshots, elemental staffs, magic towers and others. Talk to tiny cow kings, wipe poo out of your eyes, flip off your enemies and more in this wacky VR game.
 
 ### Who?
 With a small team from US based [Mega Cat Studios](https://megacatstudios.com/)

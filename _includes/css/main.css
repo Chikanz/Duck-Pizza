@@ -1152,12 +1152,38 @@ header h2
 
 .aboutLink
 {
+    position: relative;
+    top: -40px;
     background-color: #{{ site.color.third }};
-    font-size: 20px;   
+    font-size: 23px;   
+    font-weight: bold;
     border-radius: 10em;
     text-align: center;
     padding: 5px 5px;
-    margin: 5px;    
+    margin: 7px 60px;
+    color: #{{site.color.primary}};
+    
+    text-decoration: none;    
 }
 
+.aboutLink:hover
+{
+    text-decoration: none;
+    transition: 0.5s ease !important;
+    color: #{{site.color.primary}};
+    transform: scale(1.05) !important;
+}
 
+.pageUpButt
+{
+    font-size: 35px; 
+    position: relative;
+    top: -3px;
+    left: -5px;
+}
+
+.footer-below a
+{
+    font-size: 17px;
+    text-decoration: none;    
+}

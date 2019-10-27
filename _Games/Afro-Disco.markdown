@@ -22,8 +22,11 @@ Dance off against your friends in the game where chess and Smash Brothers collid
 ### Who?
 [@EqualzDee](https://www.twitter.com/equalzdee) and [@MaximSrour](https://twitter.com/MaximSrour)
 
+### Doing?
+Design + code
+
 ### Anything to brag about?
-Selected to pitch and later demo the game at EA Firemonkeys studio. 
+Selected to pitch and later demo the game at [EA Firemonkeys](https://www.ea.com/studios/firemonkeys). 
 
 
 

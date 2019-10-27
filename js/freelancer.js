@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Forked from: Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
@@ -12,17 +12,6 @@ $(function() {
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
-    });
-});
-
-// Floating label headings for the contact form
-$(function() {
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-        $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
-        $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
-        $(this).removeClass("floating-label-form-group-with-focus");
     });
 });
 
@@ -39,24 +28,13 @@ $('.navbar-collapse ul li a').click(function() {
 //Force autoplay all videos (FUCK CHROME)
 var videos = document.getElementsByTagName("video");
 for(var i = 0; i < videos.length; i++)
-{
-    //setTimeout(function(){autoPlay(videos[i])}, 2000);
+{    
     videos[i].addEventListener("pointermove",function()    
     {
         this.muted = true;
         this.play();
     })
 }
-
-function autoPlay(vid)
-{        
-    console.log(document.readyState);
-    console.log(vid.paused);
-    vid.muted = true;
-    vid.play();           
-}
-
-
 
 //Cache courasel elements after gfy load so that they can be reset 
 var CouraselElements = [];
@@ -102,8 +80,7 @@ function onChangeCallback() {
             v.currentTime = 0;
             v.play();
         }
-    }
-    
+    }   
 }
 
 //Resize about icon text dynamically
@@ -115,10 +92,3 @@ for(var i = 0; i < text.length; i++)
         text[i].style["font-size"] = "20px";
     }
 }
-
-
-
-
-
-
-
