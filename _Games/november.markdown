@@ -27,16 +27,30 @@ icons:
 
 ### What?
 
-Short and surreal escape room experience
+Short and surreal escape room horror game
 
 ### Who?
 
-Just me! Made for uni in about a week with sounds from [freesound.org](http://freesound.org)
+Just me! I made and textured all the models from scratch, created my own interaction system and edited and mixed all the sounds myself from [freesound.org](http://freesound.org)
 
 ### Anything to brag about? 
 
-~5,000 plays, really nice comments from players, also somehow found its way to a [random japanese image board](https://bbs.no1game.net/bbs/kareha.cgi/1534811823/) (my proudest achievement)
+~8,000 plays, really nice comments from players, someone even donated money! It also somehow found its way to a [random japanese image board](https://bbs.no1game.net/bbs/kareha.cgi/1534811823/) (my proudest achievement)
 
-### Tech?
+Some lovely lets players also had nice things to say about it:
 
-Unity, Maya, WebGL, Unity Timeline
+> "Graphically absolutely beautiful, very atmospheric"
+
+[-BUNKUM](https://www.youtube.com/watch?v=zlJlUcTxqmE&feature=emb_logo)
+
+
+
+> "At least let me know that I've died, don't leave me in some floating jesus water dimension oh my gosh! Fun game though it was really good"
+
+[-Tessception](https://youtu.be/UUdzJwbAPyY?t=230)
+
+
+
+You can play november in your browser here:
+
+

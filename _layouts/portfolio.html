@@ -9,11 +9,11 @@
     
         <div>
         <!--Content-->
-        <section id="portfolio_content" class="Secondary">
+        <section id="portfolio_content" class="third">
         <div class="container">
                         
-            <h1>{{page.title}}</h1>
-            <h2>{{page.subtitle}}</h2>
+            <h1 class="third">{{page.title}}</h1>
+            <h2 class="third">{{page.subtitle}}</h2>
             
             {% if page.carousel != null %}
             {% assign datastring = site.data.carousel[page.carousel] %}
@@ -60,7 +60,7 @@
             {% endif %}
             
             <hr class="star-primary" style="margin-bottom: 20px">
-            <p class="portfolioFooter">{{page.project-date}}</p>
+            <p class="portfolioFooter Secondary">{{page.project-date}}</p>
         </div>
         </section>
         

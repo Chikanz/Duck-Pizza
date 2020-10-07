@@ -22,7 +22,8 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #{{ site.color.secondary }};
+    color:  #{{site.color.third-dark}};
+    transition: 0.2s;
 }
 
 h1,
@@ -560,7 +561,7 @@ footer .footer-below {
 .markdown a
 {
     text-align: center;
-    color:#{{ site.color.third }};
+    color:  #{{site.color.third-dark}};
     text-decoration: underline;
 }
 
@@ -577,23 +578,29 @@ footer .footer-below {
 
 .markdown blockquote
 {
-    padding:2%;    
+    padding:2%;   
+    border-left: 5px solid #{{site.color.third-dark}};
+    margin-bottom: 0px;
+    margin-top: 40px;
+    padding-top: 0px;
 }
 
 .markdown h1
 {
     font-size: 5em;
+    margin-top: 20px;
 }
 
 .markdown h2
 {
     font-size: 3.5em;
+    margin-top: 40px;
 }
 
 .markdown p
 {
     font-size: 1.5em;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .markdown li
 {
@@ -601,11 +608,25 @@ footer .footer-below {
 }
 
 
-.markdown h1,h2,h3
+.markdown h1, .markdown h2, .markdown h3
 {
+    color:  #{{site.color.secondary}};
     margin-top: 25px;
     margin-bottom: 0px;
 }
+
+.markdown img
+{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.markdown video
+{
+    width: 100%;
+}
+
 
 
 nav
@@ -954,6 +975,11 @@ header h2
     text-align: center;    
     margin: 0 auto;
     background-color: #{{site.color.primary-dark}};
+}
+
+.third
+{
+    color:  #{{site.color.third}};
 }
 
 .portfolioFooter
